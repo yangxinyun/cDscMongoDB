@@ -1,5 +1,5 @@
 @{
-    RootModule        = 'cMongoDB.schema.psm1'
+    RootModule        = 'cMongoDBDSC.schema.psm1'
 
     # Version number of this module.
     ModuleVersion     = '1.0.0'
