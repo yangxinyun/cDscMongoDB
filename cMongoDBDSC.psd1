@@ -1,5 +1,7 @@
 @{
     RootModule        = 'cMongoDBDSC.schema.psm1'
+    
+    DscResourcesToExport = 'cMongoDBDSC'
 
     # Version number of this module.
     ModuleVersion     = '1.0.0'
