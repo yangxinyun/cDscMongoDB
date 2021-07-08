@@ -27,7 +27,7 @@
         PSData = @{
     
             # Tags applied to this module. These help with module discovery in online galleries.
-            Tags                     = @('DSC', 'MongoDB', 'Mongo')
+            Tags                     = @('DSC', 'MongoDB', 'Mongo', 'DSCResource', 'DesiredStateConfiguration')
     
             # A URL to the license for this module.
             # LicenseUri = ''
