@@ -72,7 +72,7 @@ storage:
         DependsOn  = "[package]InstallMongoDb", "[file]ConfigurationFile", "[file]DBDir", "[file]LogDir"
         GetScript  =
         {
-            $instances = Get-Service mongoDB* #Get-WmiObject win32_service | Where-Object { $_.Name -match "mongo*" -and $_.PathName -match "mongod.exe" } | ForEach-Object { $_.Caption }
+            $instances = Get-Service mongoDB*
             $vals = @{ 
                 Installed = [boolean]$instances; 
             }
@@ -80,7 +80,7 @@ storage:
         }
         TestScript =
         {
-            $instances = Get-Service mongoDB* #Get-WmiObject win32_service | Where-Object { $_.Name -match "mongo*" -and $_.PathName -match "mongod.exe" } | ForEach-Object { $_.Caption }
+            $instances = Get-Service mongoDB*
             if ($instances)
             {
                 Write-Verbose "MongoDB is already running as a service"
