@@ -4,7 +4,7 @@
     DscResourcesToExport = 'cMongoDBDSC'
 
     # Version number of this module.
-    ModuleVersion     = '1.0.0'
+    ModuleVersion     = '1.0.3'
 
     # ID used to uniquely identify this module
     GUID              = '283a64cd-6998-4b26-8002-23a4f811b902'
