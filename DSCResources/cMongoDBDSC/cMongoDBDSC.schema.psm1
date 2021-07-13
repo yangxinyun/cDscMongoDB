@@ -1,4 +1,4 @@
-Configuration cMongoDB
+Configuration cMongoDBDSC
 {
     param(
         [Parameter(Mandatory = $True)]
