@@ -23,6 +23,7 @@ Configuration cMongoDBDSC
     )
 
     Import-DscResource -ModuleName PSDesiredStateConfiguration
+    Import-DscResource -ModuleName xPSDesiredStateConfiguration
 
     Package InstallMongoDb
     {
@@ -123,13 +124,14 @@ storage:
         }
     }
 
-    Service StartMongoService
+    xService StartMongoService
     {
         Ensure      = $Ensure
         DependsOn   = "[script]InstallMongoService"
         StartupType = "Automatic"
         Name        = "MongoDB"
         State       = "Running"
+        StartupTimeout = 6000000
     }
     
 }
